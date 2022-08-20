@@ -3,27 +3,16 @@ import { useRouter } from 'next/router';
 import { useState, useEffect } from 'react';
 import { useTheme } from 'next-themes';
 import NextLink from 'next/link';
-import cn from 'classnames';
-
-import Footer from 'components/Footer';
-import MobileMenu from 'components/MobileMenu';
-
-function NavItem({ href, text }) {
+import { SiGithub, SiTwitter } from 'react-icons/si';
+function NavItem({ href, text, icon }) {
   const router = useRouter();
   const isActive = router.asPath === href;
-
+  const Logo = icon;
   return (
     <NextLink href={href}>
-      <a
-        className={cn(
-          isActive
-            ? 'font-semibold text-gray-800 dark:text-gray-200'
-            : 'font-normal text-gray-600 dark:text-gray-400',
-          'hidden md:inline-block p-1 sm:px-3 sm:py-2 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-800 transition-all'
-        )}
-      >
-        <span className="capsize">{text}</span>
-      </a>
+      <div className=" content-center p-2 sm:px-3 sm:py-2 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-800 transition-all flex flex-row">
+        <Logo /> <span className="px-3 capsize">{text}</span>
+      </div>
     </NextLink>
   );
 }
@@ -38,9 +27,9 @@ export default function Container(props) {
   const { children, ...customMeta } = props;
   const router = useRouter();
   const meta = {
-    title: 'Lee Robinson – Developer, writer, creator.',
+    title: 'Nada Farook – Developer, writer, creator.',
     description: `Front-end developer, JavaScript enthusiast, and course creator.`,
-    image: 'https://leerob.io/static/images/lee-banner.png',
+    image: '/avatar.png',
     type: 'website',
     ...customMeta
   };
@@ -72,13 +61,17 @@ export default function Container(props) {
           <a href="#skip" className="skip-nav">
             Skip to content
           </a>
-          <div className="ml-[-0.60rem]">
-            <MobileMenu />
-            <NavItem href="/" text="Home" />
-            <NavItem href="/guestbook" text="Guestbook" />
-            <NavItem href="/dashboard" text="Dashboard" />
-            <NavItem href="/blog" text="Blog" />
-            <NavItem href="/snippets" text="Snippets" />
+          <div className="flex ml-[-0.60rem]">
+            <NavItem
+              icon={SiTwitter}
+              href="https://twitter.com/___Nadaaa"
+              text="Twitter"
+            />
+            <NavItem
+              icon={SiGithub}
+              href="https://github.com/NadaaFarook"
+              text="Github"
+            />
           </div>
           <button
             aria-label="Toggle Dark Mode"
@@ -121,7 +114,6 @@ export default function Container(props) {
         className="flex flex-col justify-center px-8 bg-gray-50 dark:bg-gray-900"
       >
         {children}
-        <Footer />
       </main>
     </div>
   );
