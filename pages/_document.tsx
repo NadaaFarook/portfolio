@@ -4,6 +4,7 @@ export default function Document(props) {
   return (
     <Html lang="en">
       <Head>
+      <script async src="https://cdn.splitbee.io/sb.js"></script>
         <link
           rel="preload"
           href="/fonts/ibm-plex-sans-var.woff2"
@@ -39,7 +40,8 @@ export default function Document(props) {
         <script async src="https://cdn.splitbee.io/sb.js"></script>
       </Head>
       <body className="bg-white dark:bg-black text-white dark:text-black">
-        <Main />
+      <script async src="https://cdn.splitbee.io/sb.js"></script>
+       <Main />
         <NextScript />
         <script async src="https://cdn.splitbee.io/sb.js"></script>
       </body>
