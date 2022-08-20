@@ -62,7 +62,7 @@ export default function Container(props) {
           <meta property="article:published_time" content={meta.date} />
         )}
 
-<script async src="https://cdn.splitbee.io/sb.js"></script>
+     <script async src="https://cdn.splitbee.io/sb.js"></script>
       </Head>
 
       <div className="flex flex-col justify-center px-8">

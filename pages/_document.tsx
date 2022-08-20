@@ -36,10 +36,12 @@ export default function Document(props) {
           content="max-snippet:-1, max-image-preview:large, max-video-preview:-1"
           name="robots"
         />
+        <script async src="https://cdn.splitbee.io/sb.js"></script>
       </Head>
       <body className="bg-white dark:bg-black text-white dark:text-black">
         <Main />
         <NextScript />
+        <script async src="https://cdn.splitbee.io/sb.js"></script>
       </body>
     </Html>
   );
