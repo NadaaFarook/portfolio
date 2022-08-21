@@ -201,6 +201,9 @@ export default function Home() {
               gradient="from-[#FDE68A] via-[#FCA5A5] to-[#FECACA]"
             />
           </div>
+          <p className="mt-10 text-gray-700 inline-flex items-center">
+            Original Portfolio by Lee Robinson.
+          </p>
         </div>
       </Container>
     </Suspense>
