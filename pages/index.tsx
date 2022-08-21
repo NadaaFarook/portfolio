@@ -39,7 +39,7 @@ export default function Home() {
       title: 'neoG Camp.',
       description: `Managed the frontend of the main website. I also was a part of building internal tools and LMS and dashboard that benefitted neoG Camp.
          Mockman was one of the internal tool I made which is used by over 1000+ times.`,
-      time: 'April 2022 - June 2021 • 3 months',
+      time: '3 months',
       type: 'SDE Intern',
       url: 'https://neog.camp/',
       logo: 'https://neog-lms.vercel.app/favicon.png'
@@ -49,7 +49,7 @@ export default function Home() {
       description:
         'I worked as a freelancer and developed the frontend UI for the user and admin interfaces.',
 
-      time: 'March 22 - April 2022 • 1 month',
+      time: '1 month',
       type: 'Freelance Frontend Development',
       url: 'https://strivio.fit/',
       logo: '/favicon.svg'
