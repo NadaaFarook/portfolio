@@ -130,13 +130,13 @@ export default function Home() {
           </p>
           <div className="w-full">
             <ProjectCard
-              href="https://declutr-app-t.vercel.app/"
+              href="https://www.declutr.xyz/naddy"
               title="Declutr"
               brandColor={'#1DA1F2'}
               projectLogo={SiTwitter}
               stack={['nextjs', 'react', 'nodejs', 'chakraui']}
-              footerNote="A project built on Twitter API v2"
-              description=" Declutr makes it easy to quickly save and explore bookmarks later."
+              footerNote="Has over 250+ users"
+              description="A social bookmarking experience for people who like to share knowledge."
               link={false}
             />
             <ProjectCard
