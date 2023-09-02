@@ -139,7 +139,7 @@ export default function Home() {
               footerNote="Was responsible for the whole frontend side of it"
               link={true}
             />
-            
+
             <ProjectCard
               href="https://www.declutr.xyz/naddy"
               title="Declutr"
@@ -282,22 +282,31 @@ function ProjectCard({
           <div className="flex items-center">
             <div
               className={cn(
-                ' ml-2 mr-4 !bg-opacity-10 bg-yellow-700 p-2 rounded-full'
+                ' ml-2 mr-4 !bg-opacity-10 bg-yellow-700 p-2 rounded-full' + title == 'MyGPTBrain' && 'bg-transparent'
               )}
+
             >
               <span className="sr-only">{title}</span>
-              {link == true ? (
-                <img
-                  src={Logo}
-                  style={{ color: brandColor }}
-                  className="h-8 w-8 min-w-sm text-gray-900 dark:text-gray-100"
-                />
-              ) : (
-                <Logo
-                  className="h-8 w-8 min-w-sm text-gray-900 dark:text-gray-100"
-                  style={{ color: brandColor }}
-                />
-              )}
+              {
+                title == 'MyGPTBrain' ? (
+                  <img
+                    src={Logo}
+                    style={{ color: brandColor }}
+                    className='h-20 w-20 min-w-sm text-gray-900 dark:text-gray-100'
+                  />
+                ) : link == true ? (
+                  <img
+                    src={Logo}
+                    style={{ color: brandColor }}
+                    className='h-8 w-8 min-w-sm text-gray-900 dark:text-gray-100'
+                  />
+                ) : (
+                  <Logo
+                    className='h-8 w-8 min-w-sm text-gray-900 dark:text-gray-100'
+                    style={{ color: brandColor }}
+                  />
+                )
+              }
             </div>
             <div>
               <div className="flex space-x-2">
