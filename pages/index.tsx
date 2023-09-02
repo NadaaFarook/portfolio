@@ -132,7 +132,7 @@ export default function Home() {
           <ProjectCard
               href="https://mygptbrain.com/"
               title="MyGPTBrain"
-              brandColor={'#000000'}
+              brandColor={'#ffffff'}
               projectLogo={'/gpt.svg'}
               stack={['nextjs', 'chakraui', 'typescript']}
               description="An AI assistant that could answer questions, contextualize your bookmarks, sync with notion tables, drive files, pocket articles, & much more. 💁‍♂️✨"
@@ -279,7 +279,7 @@ function ProjectCard({
     <Link href={href} passHref aria-label={title}>
       <a className="mb-4" href={href}>
         <div className=" my-6 transform hover:scale-[1.01] transition-all bg-white dark:bg-gray-900 w-full flex items-center justify-between border border-gray-200 dark:border-gray-800 rounded p-4">
-          <div className="flex items-center">
+          <div className="flex gap-4 items-center">
             <div
               className={cn(
                 ' ml-2 mr-4 !bg-opacity-10 bg-yellow-700 p-2 rounded-full' + title == 'MyGPTBrain' && 'bg-transparent'
