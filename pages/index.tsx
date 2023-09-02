@@ -129,6 +129,17 @@ export default function Home() {
             You can check them out here. Let me know what you think!
           </p>
           <div className="w-full">
+          <ProjectCard
+              href="https://mygptbrain.com/"
+              title="MyGPTBrain"
+              brandColor={'#000000'}
+              projectLogo={'/gpt.svg'}
+              stack={['nextjs', 'chakraui', 'typescript']}
+              description="An AI assistant that could answer questions, contextualize your bookmarks, sync with notion tables, drive files, pocket articles, & much more. 💁‍♂️✨"
+              footerNote="Was responsible for the whole frontend side of it"
+              link={true}
+            />
+            
             <ProjectCard
               href="https://www.declutr.xyz/naddy"
               title="Declutr"
@@ -162,16 +173,7 @@ export default function Home() {
               link={true}
             />
 
-            <ProjectCard
-              href="https://mygptbrain.com/"
-              title="MyGPTBrain"
-              brandColor={'#000000'}
-              projectLogo={'/gpt.jpeg'}
-              stack={['nextjs', 'chakraui', 'typescript']}
-              description="An AI assistant that could answer questions, contextualize your bookmarks, sync with notion tables, drive files, pocket articles, & much more. 💁‍♂️✨"
-              footerNote="Was responsible for the whole frontend side of it"
-              link={true}
-            />
+            
           </div>
 
           <div>
